@@ -324,6 +324,10 @@ int main()
         sleep(1);
         displayList(actualList);
     }
+    
+    
+    pthread_mutex_destroy(&protect_dll);
+    threadBarrierDestroy(&Barrier);
 
     #endif
     
